@@ -1,9 +1,10 @@
-# Assignment web (HCMUT) - PHP Server for Hands-free App
+# Hands-free Server
+Assignment web (HCMUT) - PHP Server for Hands-free App
 
 Client Repository: https://github.com/huynhsamha/hands-free-client
 
-# Database
+## Database
 
-# File structure
+## File structure
 
-# Quickstart
+## Quickstart
