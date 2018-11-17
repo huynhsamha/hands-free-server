@@ -14,6 +14,6 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 
 include_once __DIR__.DIRECTORY_SEPARATOR.'../config/database.php';
 
-include_once __DIR__.DIRECTORY_SEPARATOR.'../utils/functions.php';
+include_once __DIR__.DIRECTORY_SEPARATOR.'../utils/Utils.php';
 
 ?>

@@ -1,14 +1,25 @@
 <?php
 
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'hands-free';
+class Database {
 
-$conn = mysqli_connect($host, $username, $password, $database);
+    private $host = 'localhost';
+    private $username = 'root';
+    private $password = '';
+    private $database = 'hands-free';
 
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+    private $conn;
+
+    public function getConnection() {
+        $this->conn = new mysqli($this->host, $this->username, $this->password, $this->database);
+        
+        if ($this->conn->connect_error) {
+            die("Connection failed: " . $this->conn->connect_error);
+        }
+
+        return $this->conn;
+    }
+
 }
+
 
 ?>
