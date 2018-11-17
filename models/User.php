@@ -20,10 +20,9 @@ class User {
         $this->conn = $db;
     }
 
-    private function generateSalt() {
-        $this->salt = bin2hex(random_bytes(32)); 
-        # 32 bytes => 32*8 bits
-        # to Hex: 32*8/4 (with 1 hex = 4 bits)
+    public static function generateSalt() {
+        return bin2hex(random_bytes(32)); 
+        # 32 bytes => 32*8 bits | to Hex: 32*8/4 (with 1 hex = 4 bits)
     }
 
     private function hashPassword($password) {
@@ -34,7 +33,18 @@ class User {
         return $this->password == $this->hashPassword($password);
     }
 
+    public function checkExistEmail() {
+        $res = $this->conn->query("SELECT COUNT(*) as total FROM $this->table_name WHERE email = '$this->email'");
+        $data = $res->fetch_assoc();
+        $total = $data['total'];
+        return $total > 0;
+    }
+
     public function create() {
+        if ($this->checkExistEmail()) {
+            throw new Error('Email is existen.');
+        }
+
         $stmt = $this->conn->prepare("INSERT INTO $this->table_name (
             email, first_name, last_name, tel, photo_url, address, password, salt)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
@@ -50,7 +60,7 @@ class User {
             $this->salt
         );
 
-        $this->generateSalt();
+        $this->salt = User::generateSalt();
         $this->password = $this->hashPassword($this->password);
 
         if (!$stmt->execute()) throw new Error($stmt->error);
