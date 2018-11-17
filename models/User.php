@@ -2,6 +2,7 @@
 
 include_once __DIR__.DIRECTORY_SEPARATOR.'../utils/Model.php';
 
+
 class User extends Model {
     
     private $table_name = 'User';
@@ -77,10 +78,13 @@ class User extends Model {
         $data = $res->fetch_assoc();
         $this->fromJSON($data);
 
-        if ($this->validatePassword($input_password)) {
-        } else {
+        if ($this->validatePassword($input_password) == false) {
             throw new Error('Password is not correct. Please check your password correctly');
         }
+
+        $this->password = null;
+        $this->salt = null;
+
     }
 }
 
