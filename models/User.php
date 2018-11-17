@@ -1,8 +1,9 @@
 <?php
 
-class User {
+include_once __DIR__.DIRECTORY_SEPARATOR.'../utils/Model.php';
+
+class User extends Model {
     
-    private $conn;
     private $table_name = 'User';
     
     public $id;
@@ -16,13 +17,10 @@ class User {
     public $salt;
     public $created_at;
 
-    public function __construct($db) {
-        $this->conn = $db;
-    }
-
     public static function generateSalt() {
+        # random_bytes => 32 bytes => 32*8 bits
+        # to Hex: 32*8/4 (with 1 hex = 4 bits) = length 64
         return bin2hex(random_bytes(32)); 
-        # 32 bytes => 32*8 bits | to Hex: 32*8/4 (with 1 hex = 4 bits)
     }
 
     private function hashPassword($password) {
@@ -42,7 +40,7 @@ class User {
 
     public function create() {
         if ($this->checkExistEmail()) {
-            throw new Error('Email is existen.');
+            throw new Error('Email is existen. You can forgot password to reset.');
         }
 
         $stmt = $this->conn->prepare("INSERT INTO $this->table_name (
@@ -64,6 +62,25 @@ class User {
         $this->password = $this->hashPassword($this->password);
 
         if (!$stmt->execute()) throw new Error($stmt->error);
+    }
+
+    public function login() {
+
+        $res = $this->conn->query("SELECT * FROM $this->table_name WHERE email = '$this->email' limit 1");
+
+        if ($res->num_rows == 0) {
+            throw new Error('Email is not existen. Please check your email correctly');
+        }
+
+        $input_password = $this->password;
+
+        $data = $res->fetch_assoc();
+        $this->fromJSON($data);
+
+        if ($this->validatePassword($input_password)) {
+        } else {
+            throw new Error('Password is not correct. Please check your password correctly');
+        }
     }
 }
 
