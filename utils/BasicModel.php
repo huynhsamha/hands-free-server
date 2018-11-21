@@ -1,6 +1,6 @@
 <?php
 
-abstract class Model {
+abstract class BasicModel {
 
     protected $conn; # protected field for inheritance
 

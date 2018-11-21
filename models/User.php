@@ -1,9 +1,9 @@
 <?php
 
-include_once __DIR__.DIRECTORY_SEPARATOR.'../utils/Model.php';
+include_once __DIR__.DIRECTORY_SEPARATOR.'../utils/BasicModel.php';
 
 
-class User extends Model {
+class User extends BasicModel {
     
     private $table_name = 'User';
     

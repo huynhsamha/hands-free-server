@@ -3,24 +3,24 @@
 include_once __DIR__.DIRECTORY_SEPARATOR.'../utils/BasicModel.php';
 
 
-class Brand extends BasicModel {
+class Model extends BasicModel {
     
-    private $table_name = 'Brand';
+    private $table_name = 'Model';
     
     public $id;
+    public $brandId;
     public $name;
-    public $iconUri;
-    public $totalModels;
+    public $totalProducts;
 
 
     public function create() {
         $stmt = $this->conn->prepare("INSERT INTO $this->table_name (
-            name, iconUri, totalModels) VALUES (?, ?, ?)");
+            brandId, name, totalProducts) VALUES (?, ?, ?)");
 
-        $stmt->bind_param("ssi",
+        $stmt->bind_param("isi",
+            $this->brandId,
             $this->name,
-            $this->iconUri,
-            $this->totalModels
+            $this->totalProducts
         );
 
         if (!$stmt->execute()) throw new Error($stmt->error);
