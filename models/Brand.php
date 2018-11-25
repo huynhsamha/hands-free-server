@@ -36,6 +36,13 @@ class Brand extends BasicModel {
         $data = $res->fetch_assoc();
         $this->fromJSON($data);
     }
+
+    public function addOneModel() {
+        $this->totalModels++;
+        $res = $this->conn->query("UPDATE $this->table_name SET totalModels = $this->totalModels WHERE id = $this->id");
+
+        if (!$res) throw new Error($res->error);
+    }
 }
 
 ?>

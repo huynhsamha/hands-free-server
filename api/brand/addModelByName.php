@@ -18,9 +18,12 @@ $model->totalProducts = Utils::retrieve_post('totalProducts');
 
 try {
     $brand->findOneByName();
+
     $model->brandId = $brand->id;
 
     $model->create();
+
+    $brand->addOneModel();
 
     http_response_code(201);
     echo json_encode(array(
