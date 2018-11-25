@@ -25,6 +25,17 @@ class Brand extends BasicModel {
 
         if (!$stmt->execute()) throw new Error($stmt->error);
     }
+
+    public function findOneByName() {
+        $res = $this->conn->query("SELECT * FROM $this->table_name WHERE name = '$this->name' limit 1");
+
+        if ($res->num_rows == 0) {
+            throw new Error('Brand is not existen. Please check your brand name correctly');
+        }
+
+        $data = $res->fetch_assoc();
+        $this->fromJSON($data);
+    }
 }
 
 ?>
