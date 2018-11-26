@@ -22,6 +22,8 @@ async.eachSeries(data, (dt, cb) => {
         bestGift: dt.bestGift,
         bestPrice: dt.bestPrice,
         hotNew: dt.hotNew,
+        hotDeal: dt.hotDeal,
+        recentlyViewed: dt.recentlyViewed,
         quantity: Math.floor(Math.random() * 300),
         status: demo.status,
         warranty: demo.warranty,

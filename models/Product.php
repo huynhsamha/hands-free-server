@@ -19,6 +19,8 @@ class Product extends BasicModel {
     public $bestGift;
     public $bestPrice;
     public $hotNew;
+    public $hotDeal;
+    public $recentlyViewed;
     public $quantity;
     public $status;
     public $warranty;
@@ -30,12 +32,12 @@ class Product extends BasicModel {
         $stmt = $this->conn->prepare("INSERT INTO $this->table_name (
             modelId, name, thumbnail, price, priceText, 
             ceilPrice, ceilPriceText,
-            bestSell, bestGift, bestPrice, hotNew, 
+            bestSell, bestGift, bestPrice, hotNew, hotDeal, recentlyViewed,
             quantity, status, warranty, 
             technicalInfo, galleryImages
-        ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+        ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 
-        $stmt->bind_param("issisisiiiiissss",
+        $stmt->bind_param("issisisiiiiiiissss",
             $this->modelId,
             $this->name,
             $this->thumbnail,
@@ -47,6 +49,8 @@ class Product extends BasicModel {
             $this->bestGift,
             $this->bestPrice,
             $this->hotNew,
+            $this->hotDeal,
+            $this->recentlyViewed,
             $this->quantity,
             $this->status,
             $this->warranty,
@@ -84,17 +88,25 @@ class Product extends BasicModel {
         return $this->findByAttributeWithJoin('hotNew', 1);
     }
 
+    public function findHotDeal() {
+        return $this->findByAttributeWithJoin('hotDeal', 1);
+    }
+
+    public function findRecentlyViewed() {
+        return $this->findByAttributeWithJoin('recentlyViewed', 1);
+    }
+
     public function update() {
         $stmt = $this->conn->prepare("UPDATE $this->table_name SET
             modelId = ?, name = ?, thumbnail = ?,
             price = ?, priceText = ?,
             ceilPrice = ?, ceilPriceText = ?,
-            bestSell = ?, bestGift = ?, bestPrice = ?, hotNew = ?, 
+            bestSell = ?, bestGift = ?, bestPrice = ?, hotNew = ?, hotDeal = ?, recentlyViewed = ?, 
             quantity = ?, status = ?, warranty = ?,
             technicalInfo = ?, galleryImages = ?
         WHERE id = $this->id");
 
-        $stmt->bind_param("issisisiiiiissss",
+        $stmt->bind_param("issisisiiiiiiissss",
             $this->modelId,
             $this->name,
             $this->thumbnail,

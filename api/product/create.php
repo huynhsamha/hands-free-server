@@ -20,6 +20,8 @@ $product->bestSell = Utils::retrieve_post('bestSell') == "true";
 $product->bestGift = Utils::retrieve_post('bestGift') == "true";
 $product->bestPrice = Utils::retrieve_post('bestPrice') == "true";
 $product->hotNew = Utils::retrieve_post('hotNew') == "true";
+$product->hotDeal = Utils::retrieve_post('hotDeal') == "true";
+$product->recentlyViewed = Utils::retrieve_post('recentlyViewed') == "true";
 $product->quantity = Utils::retrieve_post('quantity');
 $product->status = Utils::retrieve_post('status');
 $product->warranty = Utils::retrieve_post('warranty');
