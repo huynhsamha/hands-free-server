@@ -57,20 +57,31 @@ class Product extends BasicModel {
         if (!$stmt->execute()) throw new Error($stmt->error);
     }
 
+    public function findByAttributeWithJoin($attr, $value) {
+        $rows = $this->conn->query("SELECT p.*, m.name as modelName, b.name as brandName, b.id as brandId 
+            FROM Product p, Model m, Brand b 
+            WHERE $attr=$value and p.modelId = m.id and m.brandId = b.id");
+        $res = array();
+        while ($row = mysqli_fetch_assoc($rows)) {
+            array_push($res, $row);
+        }
+        return $res;
+    }
+
     public function findBestSell() {
-        return $this->findByAttribute('bestSell', 1);
+        return $this->findByAttributeWithJoin('bestSell', 1);
     }
 
     public function findBestGift() {
-        return $this->findByAttribute('bestGift', 1);
+        return $this->findByAttributeWithJoin('bestGift', 1);
     }
 
     public function findBestPrice() {
-        return $this->findByAttribute('bestPrice', 1);
+        return $this->findByAttributeWithJoin('bestPrice', 1);
     }
 
     public function findHotNew() {
-        return $this->findByAttribute('hotNew', 1);
+        return $this->findByAttributeWithJoin('hotNew', 1);
     }
 
     public function update() {
