@@ -13,7 +13,6 @@ abstract class BasicModel {
             $this->$key = $val;
         }
     }
-
 }
 
 ?>

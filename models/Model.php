@@ -25,6 +25,24 @@ class Model extends BasicModel {
 
         if (!$stmt->execute()) throw new Error($stmt->error);
     }
+
+    public function findOneByName() {
+        $res = $this->conn->query("SELECT * FROM $this->table_name WHERE name = '$this->name' limit 1");
+
+        if ($res->num_rows == 0) {
+            throw new Error('Model is not existen. Please check your model name correctly');
+        }
+
+        $data = $res->fetch_assoc();
+        $this->fromJSON($data);
+    }
+
+    public function addOneProduct() {
+        $this->totalProducts++;
+        $res = $this->conn->query("UPDATE $this->table_name SET totalProducts = $this->totalProducts WHERE id = $this->id");
+
+        if (!$res) throw new Error($res->error);
+    }
 }
 
 ?>
