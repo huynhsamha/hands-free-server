@@ -11,14 +11,10 @@ async.eachSeries(data, (dt, cb) => {
         name: dt.brand,
         iconUri: dt.icon,
         totalModels: 0
-    }, {encode: false});
+    });
     console.log(data)
 
-    axios.post('http://localhost/hands-free/api/brand/create.php', data, {
-        headers: {
-            'charset': 'utf-8'
-        }
-    }).then(() => cb()).catch(err => cb(err))
+    axios.post('http://localhost/hands-free/api/brand/create.php', data).then(() => cb()).catch(err => cb(err))
 
 }, (err) => {
     if (err) console.log(err);

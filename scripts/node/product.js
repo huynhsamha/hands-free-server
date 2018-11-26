@@ -27,7 +27,7 @@ async.eachSeries(data, (dt, cb) => {
         warranty: demo.warranty,
         technicalInfo: JSON.stringify(demo.technicalInfo),
         galleryImages: JSON.stringify(demo.galleryImages)
-    }, {encode: false});
+    });
     console.log(data)
 
     axios.post('http://localhost/hands-free/api/model/addProductByName.php', data).then(() => cb()).catch(err => cb(err))
