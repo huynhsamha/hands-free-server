@@ -13,6 +13,15 @@ abstract class BasicModel {
             $this->$key = $val;
         }
     }
+
+    public function findAll() {
+        $rows = $this->conn->query("SELECT * FROM $this->table_name");
+        $res = array();
+        while ($row = mysqli_fetch_assoc($rows)) {
+            array_push($res, $row);
+        }
+        return $res;
+    }
 }
 
 ?>

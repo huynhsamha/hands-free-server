@@ -5,7 +5,7 @@ include_once __DIR__.DIRECTORY_SEPARATOR.'../utils/BasicModel.php';
 
 class User extends BasicModel {
     
-    private $table_name = 'User';
+    protected $table_name = 'User';
     
     public $id;
     public $email;
