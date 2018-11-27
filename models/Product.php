@@ -12,9 +12,9 @@ class Product extends BasicModel {
     public $name;
     public $thumbnail;
     public $price;
-    public $priceText;
+    // public $priceText;
     public $ceilPrice;
-    public $ceilPriceText;
+    // public $ceilPriceText;
     public $bestSell;
     public $bestGift;
     public $bestPrice;
@@ -30,21 +30,20 @@ class Product extends BasicModel {
 
     public function create() {
         $stmt = $this->conn->prepare("INSERT INTO $this->table_name (
-            modelId, name, thumbnail, price, priceText, 
-            ceilPrice, ceilPriceText,
+            modelId, name, thumbnail, price, ceilPrice, 
             bestSell, bestGift, bestPrice, hotNew, hotDeal, recentlyViewed,
             quantity, status, warranty, 
             technicalInfo, galleryImages
         ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
 
-        $stmt->bind_param("issisisiiiiiiissss",
+        $stmt->bind_param("issiiiiiiiiissss",
             $this->modelId,
             $this->name,
             $this->thumbnail,
             $this->price,
-            $this->priceText,
+            // $this->priceText,
             $this->ceilPrice,
-            $this->ceilPriceText,
+            // $this->ceilPriceText,
             $this->bestSell,
             $this->bestGift,
             $this->bestPrice,
@@ -70,6 +69,17 @@ class Product extends BasicModel {
             array_push($res, $row);
         }
         return $res;
+    }
+
+    public function findOneByID() {
+        $res = $this->conn->query("SELECT p.*, m.name as modelName, b.name as brandName, b.id as brandId 
+            FROM Product p, Model m, Brand b 
+            WHERE p.id=$this->id and p.modelId = m.id and m.brandId = b.id");
+        if ($res->num_rows == 0) {
+            throw new Error('Product is not exist. Please check your id correctly');
+        }
+        $data = $res->fetch_assoc();
+        return $data;
     }
 
     public function findBestSell() {
@@ -99,21 +109,23 @@ class Product extends BasicModel {
     public function update() {
         $stmt = $this->conn->prepare("UPDATE $this->table_name SET
             modelId = ?, name = ?, thumbnail = ?,
-            price = ?, priceText = ?,
-            ceilPrice = ?, ceilPriceText = ?,
+            price = ?, 
+            -- priceText = ?,
+            ceilPrice = ?, 
+            -- ceilPriceText = ?,
             bestSell = ?, bestGift = ?, bestPrice = ?, hotNew = ?, hotDeal = ?, recentlyViewed = ?, 
             quantity = ?, status = ?, warranty = ?,
             technicalInfo = ?, galleryImages = ?
         WHERE id = $this->id");
 
-        $stmt->bind_param("issisisiiiiiiissss",
+        $stmt->bind_param("issiiiiiiiiissss",
             $this->modelId,
             $this->name,
             $this->thumbnail,
             $this->price,
-            $this->priceText,
+            // $this->priceText,
             $this->ceilPrice,
-            $this->ceilPriceText,
+            // $this->ceilPriceText,
             $this->bestSell,
             $this->bestGift,
             $this->bestPrice,
@@ -140,7 +152,7 @@ class Product extends BasicModel {
         $maxPrice = Utils::defaultNull($maxPrice, 2000000000);
         $orderType = Utils::defaultNull($orderType, 'best_sell');
         $page = Utils::defaultNull($page, 1);
-        
+
         $brandList = array_filter($brandList); // removing blank, null, false, 0 (zero) values
 
         /** Count total products matching */
@@ -202,6 +214,7 @@ class Product extends BasicModel {
             'total' => $total,
             'page' => $page,
             'onePage' => $onePage,
+            'totalPage' => $maxPage,
             'offset' => $offset,
             'data' => $res
         );

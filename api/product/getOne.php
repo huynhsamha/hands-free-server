@@ -11,16 +11,10 @@ $db = $database->getConnection();
 $product = new Product($db);
 
 $queries = Utils::retrieve_queries();
+$product->id = Utils::retrieve_field($queries, 'id');
 
 try {
-    $res = $product->search(
-        Utils::retrieve_field($queries, 'keywords'),
-        isset($queries['brandList']) ? $queries['brandList'] : null, // array type
-        Utils::retrieve_field($queries, 'minPrice'),
-        Utils::retrieve_field($queries, 'maxPrice'),
-        Utils::retrieve_field($queries, 'orderType'),
-        Utils::retrieve_field($queries, 'page')
-    );
+    $res = $product->findOneByID();
 
     http_response_code(200);
     echo json_encode($res);
