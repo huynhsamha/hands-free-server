@@ -11,9 +11,34 @@
 // echo strip_tags($var);
 
 
-$a = "true" == "false" ? 1 : 0;
-echo $a;
-echo $a === null;
-echo false === null;
+// $a = "true" == "false" ? 1 : 0;
+// echo $a;
+// echo $a === null;
+// echo false === null;
+
+$keywords = "sony";
+$brandList = [103, 105];
+$minPrice = 3000000; 
+$maxPrice = 25000000;
+$orderType;
+
+// $sqlCount = "SELECT count(*) as total ";
+// $sqlRows  = "SELECT p.*, m.name as modelName, b.name as brandName, b.id as brandId ";
+// $query = "from Product p, Model m, Brand b where p.modelId = m.id and m.brandId in (".join(', ', $brandList).") and 
+//             $minPrice <= p.price and p.price <= $maxPrice and (p.name like '%$keywords%' or m.name like '%$keywords%')
+//             order by ";
+
+// echo $sqlCount . $query;
+
+$onePage = 20;
+$page = 6;
+$total = 141;
+$minPage = 1;
+$maxPage = floor(($total + $onePage - 1) / $onePage);
+$page = min($page, $maxPage);
+$page = max($page, $minPage);
+$offset = $onePage * ($page - 1);
+
+echo $maxPage, $page, $offset;
 
 ?>
