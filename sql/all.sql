@@ -396,10 +396,10 @@ INSERT INTO `Product` (`id`, `modelId`, `name`, `thumbnail`, `price`, `ceilPrice
 CREATE TABLE `User` (
   `id` int(11) NOT NULL,
   `email` varchar(256) COLLATE utf8_unicode_ci NOT NULL,
-  `first_name` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `last_name` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `firstName` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `lastName` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `tel` varchar(64) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `photo_url` varchar(1024) COLLATE utf8_unicode_ci DEFAULT '',
+  `photoUrl` varchar(1024) COLLATE utf8_unicode_ci DEFAULT '',
   `address` varchar(1024) COLLATE utf8_unicode_ci DEFAULT '',
   `password` varchar(64) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Use SHA256, store HEX, length 64',
   `salt` varchar(64) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Salt for hash password, store HEX, length 64',

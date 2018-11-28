@@ -11,10 +11,10 @@ $db = $database->getConnection();
 $user = new User($db);
 
 $user->email = Utils::retrieve_post('email');
-$user->first_name = Utils::retrieve_post('first_name');
-$user->last_name = Utils::retrieve_post('last_name');
+$user->firstName = Utils::retrieve_post('firstName');
+$user->lastName = Utils::retrieve_post('lastName');
 $user->tel = Utils::retrieve_post('tel');
-$user->photo_url = Utils::retrieve_post('photo_url');
+$user->photoUrl = Utils::retrieve_post('photoUrl');
 $user->address = Utils::retrieve_post('address');
 $user->password = Utils::retrieve_post('password');
 

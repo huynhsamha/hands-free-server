@@ -9,10 +9,10 @@ class User extends BasicModel {
     
     public $id;
     public $email;
-    public $first_name = '';
-    public $last_name = '';
+    public $firstName = '';
+    public $lastName = '';
     public $tel = '';
-    public $photo_url = '';
+    public $photoUrl = '';
     public $address = '';
     public $password;
     public $salt;
@@ -45,15 +45,15 @@ class User extends BasicModel {
         }
 
         $stmt = $this->conn->prepare("INSERT INTO $this->table_name (
-            email, first_name, last_name, tel, photo_url, address, password, salt)
+            email, firstName, lastName, tel, photoUrl, address, password, salt)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 
         $stmt->bind_param("ssssssss",
             $this->email,
-            $this->first_name,
-            $this->last_name,
+            $this->firstName,
+            $this->lastName,
             $this->tel,
-            $this->photo_url,
+            $this->photoUrl,
             $this->address,
             $this->password,
             $this->salt

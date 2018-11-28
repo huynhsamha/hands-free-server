@@ -40,8 +40,8 @@ try {
         'message' => 'Login successfully',
         'user' => $user,
         'token' => $token,
-        'issued_at' => $issued_at,
-        'token_expire' => $token_expire
+        'issuedAt' => $issued_at,
+        'tokenExpire' => $token_expire
     ));
 
 } catch (Error $err) {
