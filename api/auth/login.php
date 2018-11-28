@@ -18,6 +18,7 @@ $user->email = Utils::retrieve_post('email');
 $user->password = Utils::retrieve_post('password');
 
 try {
+    $user->email = strtolower($user->email);
     $user->login();
 
     $key = App::$secret_key;

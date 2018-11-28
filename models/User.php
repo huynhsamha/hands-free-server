@@ -41,7 +41,8 @@ class User extends BasicModel {
 
     public function create() {
         if ($this->checkExistEmail()) {
-            throw new Error('Email is existen. You can forgot password to reset.');
+            // throw new Error('Email is existen. You can forgot password to reset.');
+            throw new Error('Địa chỉ Email này đã được sử dụng. Bạn có thể yêu cầu gửi lại email để thay đổi mật khẩu.');
         }
 
         $stmt = $this->conn->prepare("INSERT INTO $this->table_name (
@@ -70,7 +71,8 @@ class User extends BasicModel {
         $res = $this->conn->query("SELECT * FROM $this->table_name WHERE email = '$this->email' limit 1");
 
         if ($res->num_rows == 0) {
-            throw new Error('Email is not existen. Please check your email correctly');
+            // throw new Error('Email is not existen. Please check your email correctly');
+            throw new Error('Địa chỉ email này không tồn tại trong hệ thống. Vui lòng kiểm tra lại email hoặc tạo tài khoản mới.');
         }
 
         $input_password = $this->password;
@@ -79,7 +81,8 @@ class User extends BasicModel {
         $this->fromJSON($data);
 
         if ($this->validatePassword($input_password) == false) {
-            throw new Error('Password is not correct. Please check your password correctly');
+            // throw new Error('Password is not correct. Please check your password correctly');
+            throw new Error('Mật khẩu chưa đúng. Vui lòng kiểm tra lại mật khẩu.');
         }
 
         $this->password = null;

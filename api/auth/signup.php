@@ -23,7 +23,8 @@ try {
 
     http_response_code(201);
     echo json_encode(array(
-        'message' => 'Sign up successfully'
+        // 'message' => 'Sign up successfully'
+        'message' => 'Đăng kí tài khoản thành công.'
     ));
 
 } catch (Error $err) {
