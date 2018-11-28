@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 28, 2018 at 12:59 AM
+-- Generation Time: Nov 28, 2018 at 03:15 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -118,8 +118,9 @@ CREATE TABLE `OrderInfo` (
   `orderTime` datetime NOT NULL,
   `approveTime` datetime DEFAULT NULL,
   `completeTime` datetime DEFAULT NULL,
-  `status` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL COMMENT 'Order, Approved, Completed',
-  `paymentMethod` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+  `status` varchar(32) COLLATE utf8_unicode_ci DEFAULT 'Order' COMMENT 'Order, Approved, Completed',
+  `paymentAddress` varchar(15) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'shop_hcm' COMMENT 'shop_hcm, shop_hn, home',
+  `paymentMethod` varchar(128) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'cash' COMMENT 'cash, bank, mastercard',
   `totalPrice` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -403,8 +404,15 @@ CREATE TABLE `User` (
   `address` varchar(1024) COLLATE utf8_unicode_ci DEFAULT '',
   `password` varchar(64) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Use SHA256, store HEX, length 64',
   `salt` varchar(64) COLLATE utf8_unicode_ci NOT NULL COMMENT 'Salt for hash password, store HEX, length 64',
-  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+  `createdAt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `User`
+--
+
+INSERT INTO `User` (`id`, `email`, `firstName`, `lastName`, `tel`, `photoUrl`, `address`, `password`, `salt`, `createdAt`) VALUES
+(1, 'huynhha@gmail.com', 'Huá»³nh', 'HÃ ', '0981112233', NULL, 'Sá»‘ 8 NghÄ©a Thá»¥c Há»“ ChÃ­ Minh', '8d179e9271eb7831303fcaa2dadd5b0925468b32ef0153e694d50e6806c34822', '5440660ebf289cbfa07fdada03d6b715a3a5fd068fe47b41073618ee1ee5c77f', '2018-11-28 11:50:09');
 
 --
 -- Indexes for dumped tables
@@ -429,7 +437,8 @@ ALTER TABLE `Model`
 -- Indexes for table `OrderDetail`
 --
 ALTER TABLE `OrderDetail`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `FOREIGN_ORDER` (`orderId`);
 
 --
 -- Indexes for table `OrderInfo`
@@ -488,7 +497,29 @@ ALTER TABLE `Product`
 -- AUTO_INCREMENT for table `User`
 --
 ALTER TABLE `User`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `Model`
+--
+ALTER TABLE `Model`
+  ADD CONSTRAINT `FOREIGN_BRAND` FOREIGN KEY (`brandId`) REFERENCES `Brand` (`id`);
+
+--
+-- Constraints for table `OrderDetail`
+--
+ALTER TABLE `OrderDetail`
+  ADD CONSTRAINT `FOREIGN_ORDER` FOREIGN KEY (`orderId`) REFERENCES `OrderInfo` (`id`);
+
+--
+-- Constraints for table `Product`
+--
+ALTER TABLE `Product`
+  ADD CONSTRAINT `FOREIGN_MODEL` FOREIGN KEY (`modelId`) REFERENCES `Model` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
