@@ -38,6 +38,15 @@ class OrderInfo extends BasicModel {
 
         if (!$res) throw new Error($res->error);
     }
+
+    public function findAllByUser() {
+        $rows = $this->conn->query("SELECT * FROM $this->table_name where userId = $this->userId");
+        $res = array();
+        while ($row = mysqli_fetch_assoc($rows)) {
+            array_push($res, $row);
+        }
+        return $res;
+    }
 }
 
 ?>

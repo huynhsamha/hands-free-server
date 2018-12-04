@@ -1,0 +1,1 @@
+In PHP My Admin, create database with name `hands-free`, and import SQL file

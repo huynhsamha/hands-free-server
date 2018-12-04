@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 28, 2018 at 03:15 PM
+-- Generation Time: Dec 04, 2018 at 04:02 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -106,6 +106,25 @@ CREATE TABLE `OrderDetail` (
   `totalPrice` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `OrderDetail`
+--
+
+INSERT INTO `OrderDetail` (`id`, `orderId`, `productId`, `quantity`, `unitPrice`, `totalPrice`) VALUES
+(1, 1, 606, 1, 1490000, 1490000),
+(2, 2, 555, 1, 2990000, 2990000),
+(3, 2, 578, 1, 3290000, 3290000),
+(4, 3, 601, 2, 3250000, 6500000),
+(5, 3, 552, 1, 3690000, 3690000),
+(6, 3, 573, 1, 11890000, 11890000),
+(7, 4, 402, 1, 34500000, 34500000),
+(8, 5, 608, 5, 3490000, 17450000),
+(9, 5, 555, 4, 2990000, 11960000),
+(10, 6, 565, 2, 6250000, 12500000),
+(11, 6, 614, 1, 6490000, 6490000),
+(12, 7, 578, 1, 3290000, 3290000),
+(13, 8, 601, 1, 3250000, 3250000);
+
 -- --------------------------------------------------------
 
 --
@@ -115,7 +134,7 @@ CREATE TABLE `OrderDetail` (
 CREATE TABLE `OrderInfo` (
   `id` int(11) NOT NULL,
   `userId` int(11) NOT NULL,
-  `orderTime` datetime NOT NULL,
+  `orderTime` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `approveTime` datetime DEFAULT NULL,
   `completeTime` datetime DEFAULT NULL,
   `status` varchar(32) COLLATE utf8_unicode_ci DEFAULT 'Order' COMMENT 'Order, Approved, Completed',
@@ -123,6 +142,20 @@ CREATE TABLE `OrderInfo` (
   `paymentMethod` varchar(128) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'cash' COMMENT 'cash, bank, mastercard',
   `totalPrice` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `OrderInfo`
+--
+
+INSERT INTO `OrderInfo` (`id`, `userId`, `orderTime`, `approveTime`, `completeTime`, `status`, `paymentAddress`, `paymentMethod`, `totalPrice`) VALUES
+(1, 1, '2018-12-04 21:07:37', NULL, NULL, 'Order', 'shop_hn', 'bank', 1490000),
+(2, 1, '2018-12-04 21:43:37', NULL, NULL, 'Order', 'shop_hcm', 'mastercard', 6280000),
+(3, 1, '2018-12-04 21:44:19', NULL, NULL, 'Order', 'home', 'cash', 22080000),
+(4, 1, '2018-12-04 21:44:43', NULL, NULL, 'Order', 'shop_hcm', 'bank', 34500000),
+(5, 1, '2018-12-04 21:45:19', NULL, NULL, 'Order', 'home', 'mastercard', 29410000),
+(6, 2, '2018-12-04 21:59:39', NULL, NULL, 'Order', 'home', 'mastercard', 18990000),
+(7, 2, '2018-12-04 22:00:27', NULL, NULL, 'Order', 'shop_hn', 'mastercard', 3290000),
+(8, 2, '2018-12-04 22:01:34', NULL, NULL, 'Order', 'shop_hn', 'cash', 3250000);
 
 -- --------------------------------------------------------
 
@@ -412,7 +445,8 @@ CREATE TABLE `User` (
 --
 
 INSERT INTO `User` (`id`, `email`, `firstName`, `lastName`, `tel`, `photoUrl`, `address`, `password`, `salt`, `createdAt`) VALUES
-(1, 'huynhha@gmail.com', 'Huá»³nh', 'HÃ ', '0981112233', NULL, 'Sá»‘ 8 NghÄ©a Thá»¥c Há»“ ChÃ­ Minh', '8d179e9271eb7831303fcaa2dadd5b0925468b32ef0153e694d50e6806c34822', '5440660ebf289cbfa07fdada03d6b715a3a5fd068fe47b41073618ee1ee5c77f', '2018-11-28 11:50:09');
+(1, 'huynhha@gmail.com', 'Huá»³nh', 'HÃ ', '0912432114', NULL, 'ÄÆ°á»ng Nguyá»…n Trung Trá»±c, PhÆ°á»ng BÃ¬nh Trá»‹ ÄÃ´ng, ThÃ nh phá»‘ Quáº£ng BÃ¬nh', '1497adaa2d8b6e94e3b9e49d9d5eb672f15a22e3b3275e191623dbb107b8b890', 'a16661b0917320873d42fcedfac84221768b405070ea51885b8f08fc63591340', '2018-11-28 11:50:09'),
+(2, 'huynhha123@gmail.com', 'Huá»³nh', 'HÃ ', '0918754467', NULL, 'ÄÆ°á»ng CMT8 ThÃ nh Phá»‘ ÄÃ  Náºµng', '8b67cf7c891c9846d6cd5726ecc70ea4a7e08bda1941fb9cb9bc8e59d54bf18a', '2834f10c05a4804246d776195f1419518f125eaa03f6a9887afd9faa9892efb5', '2018-12-04 14:54:52');
 
 --
 -- Indexes for dumped tables
@@ -479,13 +513,13 @@ ALTER TABLE `Model`
 -- AUTO_INCREMENT for table `OrderDetail`
 --
 ALTER TABLE `OrderDetail`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `OrderInfo`
 --
 ALTER TABLE `OrderInfo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `Product`
