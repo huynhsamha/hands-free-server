@@ -30,7 +30,7 @@ try {
         'iat' => $issued_at,
         'exp' => $token_expire,
         'data' => array(
-            'user_id' => $user->id,
+            'userId' => $user->id,
         )
     );
 

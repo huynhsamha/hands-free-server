@@ -16,6 +16,8 @@ class OrderDetail extends BasicModel {
 
 
     public function create() {
+        $this->calculateTotalPrice();
+
         $stmt = $this->conn->prepare("INSERT INTO $this->table_name (
             orderId, productId, quantity, unitPrice, totalPrice) VALUES (?, ?, ?, ?, ?)");
 
@@ -28,6 +30,10 @@ class OrderDetail extends BasicModel {
         );
 
         if (!$stmt->execute()) throw new Error($stmt->error);
+    }
+
+    public function calculateTotalPrice() {
+        $this->totalPrice = $this->unitPrice * $this->quantity;
     }
 }
 

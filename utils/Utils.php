@@ -4,7 +4,9 @@ class Utils {
 
     public static function retrieve_field($array, $fieldName) {
         if (isset($array[$fieldName])) {
-            $p = strip_tags($array[$fieldName]);
+            $p = $array[$fieldName];
+            if (is_array($p)) return $p;
+            $p = strip_tags($p);
             return strlen($p) > 0 ? $p : null;
         }
         return null;

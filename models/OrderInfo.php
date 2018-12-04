@@ -29,6 +29,14 @@ class OrderInfo extends BasicModel {
         );
 
         if (!$stmt->execute()) throw new Error($stmt->error);
+
+        $this->id = $this->conn->insert_id;
+    }
+
+    public function updateTotalPrice() {
+        $res = $this->conn->query("UPDATE $this->table_name SET totalPrice = $this->totalPrice WHERE id = $this->id");
+
+        if (!$res) throw new Error($res->error);
     }
 }
 
