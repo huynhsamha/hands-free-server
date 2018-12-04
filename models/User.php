@@ -87,7 +87,16 @@ class User extends BasicModel {
 
         $this->password = null;
         $this->salt = null;
+    }
 
+    public function updateInfo() {
+        $this->updateSimpleStringColumns(array('firstName', 'lastName', 'tel', 'address'));
+    }
+
+    public function getProfile() {
+        $this->findByID();
+        $this->password = null;
+        $this->salt = null;
     }
 }
 

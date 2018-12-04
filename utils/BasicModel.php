@@ -50,6 +50,20 @@ abstract class BasicModel {
         $this->fromJSON($data);
     }
 
+    public function updateSimpleStringColumns($colsName) {
+        $cols = [];
+        foreach ($colsName as $name) {
+            if ($this->$name) {
+                array_push($cols, "$name = '" . $this->$name . '\'');
+            }
+        }
+
+        if (sizeof($cols) == 0) throw new Error('Không có dữ liệu nào cần cập nhật');
+
+        $res = $this->conn->query("UPDATE $this->table_name SET ". join(' , ', $cols) ." WHERE id = $this->id");
+
+        if (!$res) throw new Error($res->error);
+    }
 }
 
 ?>
