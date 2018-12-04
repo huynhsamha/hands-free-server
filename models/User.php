@@ -98,6 +98,20 @@ class User extends BasicModel {
         $this->password = null;
         $this->salt = null;
     }
+
+    public function changePassword($oldPassword, $newPassword) {
+        $this->findByID();
+
+        if ($this->validatePassword($oldPassword) == false) {
+            // throw new Error('Password is not correct. Please check your password correctly');
+            throw new Error('Mật khẩu chưa đúng. Vui lòng kiểm tra lại mật khẩu.');
+        }
+
+        $this->salt = User::generateSalt();
+        $this->password = $this->hashPassword($newPassword);
+
+        $this->updateSimpleStringColumns(array('password', 'salt'));
+    }
 }
 
 ?>
