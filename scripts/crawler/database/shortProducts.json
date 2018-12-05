@@ -6,6 +6,8 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/p/apple_iphone_xs_max_64gb_3.jpg",
         "price": 28000000,
         "ceilPrice": null,
+        "bestGift": true,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xs-max-64-gb.html"
     },
     {
@@ -15,6 +17,9 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/p/apple_iphone_xs_max_64gb.jpg",
         "price": 24800000,
         "ceilPrice": null,
+        "bestGift": true,
+        "bestSell": true,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xs-64-gb.html"
     },
     {
@@ -24,6 +29,8 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/p/apple_iphone_xs_max_64gb_13.jpg",
         "price": 32400000,
         "ceilPrice": null,
+        "bestSell": true,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xs-max-256-gb-2-sim.html"
     },
     {
@@ -33,6 +40,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/p/apple_iphone_xs_max_64gb_4.jpg",
         "price": 30400000,
         "ceilPrice": null,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xs-max-256-gb.html"
     },
     {
@@ -51,6 +59,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_xr_white-back_09122018_carousel.jpg.large_2_1_1_2_1.jpg",
         "price": 19900000,
         "ceilPrice": null,
+        "recentlyViewed": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xr-64-gb-chinh-hang-vn.html"
     },
     {
@@ -60,6 +69,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_xr_blue-back_09122018_carousel.jpg.large_8.jpg",
         "price": 19000000,
         "ceilPrice": null,
+        "recentlyViewed": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xr-128-gb.html"
     },
     {
@@ -78,6 +88,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_xr_yellow-back_09122018_carousel.jpg.large_5.jpg",
         "price": 19500000,
         "ceilPrice": null,
+        "bestPrice": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xr-64-gb-2-sim.html"
     },
     {
@@ -87,6 +98,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/p/apple_iphone_xs_max_64gb_15.jpg",
         "price": 30500000,
         "ceilPrice": null,
+        "bestPrice": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xs-max-64-gb-chinh-hang-vn.html"
     },
     {
@@ -104,6 +116,7 @@
         "name": "Apple iPhone XS 64GB Chính hãng(VN/A)",
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/p/apple_iphone_xs_max_64gb_18.jpg",
         "price": 27000000,
+        "hotNew": true,
         "ceilPrice": null,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xs-64-gb-chinh-hang-vn.html"
     },
@@ -114,6 +127,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/p/apple_iphone_xs_max_64gb_16.jpg",
         "price": 40500000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xs-max-512-gb-chinh-hang-vn.html"
     },
     {
@@ -123,6 +137,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/p/apple_iphone_xs_max_64gb_5.jpg",
         "price": 32500000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xs-max-512-gb.html"
     },
     {
@@ -150,6 +165,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_xr_white-back_09122018_carousel.jpg.large_5_1.jpg",
         "price": 21200000,
         "ceilPrice": null,
+        "bestGift": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xr-128-gb-2-sim.html"
     },
     {
@@ -213,6 +229,8 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/p/apple_iphone_xs_max_64gb_19.jpg",
         "price": 31300000,
         "ceilPrice": null,
+        "bestPrice": true,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xs-256-gb-chinh-hang-vn.html"
     },
     {
@@ -222,6 +240,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/p/apple_iphone_xs_max_64gb_20.jpg",
         "price": 34900000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xs-512-gb-chinh-hang-vn.html"
     },
     {
@@ -366,6 +385,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_xr_coral-back_09122018_carousel.jpg.large_9.jpg",
         "price": 21000000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xr-256-gb.html"
     },
     {
@@ -375,6 +395,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_xr_red-back_09122018_carousel.jpg.large_5_1_1.jpg",
         "price": 23000000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xr-256-gb-2-sim.html"
     },
     {
@@ -384,6 +405,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone_xr_blue-back_09122018_carousel.jpg.large_2_1_1_3.jpg",
         "price": 23500000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-xr-256-gb-chinh-hang-vn.html"
     },
     {
@@ -393,6 +415,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/x/-/x-gray.jpg",
         "price": 21500000,
         "ceilPrice": null,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-x-64-gb.html"
     },
     {
@@ -402,6 +425,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/x/-/x-gray_1_6.jpg",
         "price": 19000000,
         "ceilPrice": null,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-x-64-gb-bh.html"
     },
     {
@@ -411,6 +435,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/x/-/x-gray_1.jpg",
         "price": 24500000,
         "ceilPrice": null,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-x-256-gb.html"
     },
     {
@@ -420,6 +445,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/x/-/x-gray_7.jpg",
         "price": 24800000,
         "ceilPrice": null,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-x-64-gb-chinh-hang-vn.html"
     },
     {
@@ -483,6 +509,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone-8-plus-red_4.jpg",
         "price": 19200000,
         "ceilPrice": null,
+        "recentlyViewed": true,
         "detailURL": "https://cellphones.com.vn/iphone-8-plus-64-gb-chinh-hang-red.html"
     },
     {
@@ -510,6 +537,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone-8-plus-red_5.jpg",
         "price": 25990000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/iphone-8-plus-256-gb-chinh-hang-red.html"
     },
     {
@@ -519,6 +547,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/8/-/8-gold_1_11.jpg",
         "price": 16300000,
         "ceilPrice": null,
+        "hotDeal": true,
         "detailURL": "https://cellphones.com.vn/apple-iphone-8-64-gb-chinh-hang-vn.html"
     },
     {
@@ -699,6 +728,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/i/p/iphone-6s-gold_21.jpg",
         "price": 5200000,
         "ceilPrice": null,
+        "hotDeal": true,
         "detailURL": "https://cellphones.com.vn/iphone-6s-32-gb-cu.html"
     },
     {
@@ -870,6 +900,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/n/o/note101.jpg",
         "price": null,
         "ceilPrice": null,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-note-10-chinh-hang.html"
     },
     {
@@ -879,6 +910,9 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/n/o/note101_2.jpg",
         "price": null,
         "ceilPrice": null,
+        "bestSell": true,
+        "hotDeal": true,
+        "recentlyViewed": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-note-10-512-gb-chinh-hang.html"
     },
     {
@@ -888,6 +922,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/s/8/s8plus-gray_3.jpg",
         "price": 12790000,
         "ceilPrice": 17990000,
+        "bestPrice": true,
         "detailURL": "https://cellphones.com.vn/galaxy-s8plus-cty.html"
     },
     {
@@ -897,6 +932,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/s/9/s9plus-purple_1.jpg",
         "price": 19190000,
         "ceilPrice": 23490000,
+        "bestPrice": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-s9plus-chinh-hang.html"
     },
     {
@@ -906,6 +942,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/s/8/s8-gold_3.png",
         "price": 7000000,
         "ceilPrice": null,
+        "bestGift": true,
         "detailURL": "https://cellphones.com.vn/galaxy-s8-cty-cu.html"
     },
     {
@@ -915,6 +952,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/s/8/s8plus-black_1_2.jpg",
         "price": 11290000,
         "ceilPrice": null,
+        "bestGift": true,
         "detailURL": "https://cellphones.com.vn/galaxy-s8plus-cty-at.html"
     },
     {
@@ -924,6 +962,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/s/9/s9plus-purple_1_1.jpg",
         "price": 16490000,
         "ceilPrice": null,
+        "bestGift": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-s9plus-chinh-hang-at.html"
     },
     {
@@ -933,6 +972,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/s/9/s9plus-black_6.jpg",
         "price": 20190000,
         "ceilPrice": 24490000,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-s9plus-128-gb-chinh-hang.html"
     },
     {
@@ -942,6 +982,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/s/9/s9_-gold.jpg",
         "price": 20190000,
         "ceilPrice": 24490000,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/galaxy-s9plus-128-gb-chinh-hang-gold.html"
     },
     {
@@ -960,6 +1001,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/s/1/s10_4.jpg",
         "price": null,
         "ceilPrice": null,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-s10-chinh-hang.html"
     },
     {
@@ -1023,6 +1065,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/6/a6plus-black_2.jpg",
         "price": 6590000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-a6plus-chinh-hang-at.html"
     },
     {
@@ -1032,6 +1075,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/a/aaa.jpg",
         "price": 4690000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-j6-plus-chinh-hang.html"
     },
     {
@@ -1041,6 +1085,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/j/4/j4_den_1.jpg",
         "price": 3490000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-j4-plus-chinh-hang.html"
     },
     {
@@ -1050,6 +1095,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/j/8/j8-purple.jpg",
         "price": 5350000,
         "ceilPrice": 6290000,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-j8-chinh-hang.html"
     },
     {
@@ -1059,6 +1105,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/j/8/j8-purple_2.jpg",
         "price": 4650000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-j8-chinh-hang-at.html"
     },
     {
@@ -1068,6 +1115,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/j/6/j6-purple.jpg",
         "price": 3990000,
         "ceilPrice": 4790000,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-j6-chinh-hang.html"
     },
     {
@@ -1077,6 +1125,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/p/r/product_13233_1.png",
         "price": null,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-j4-core-chinh-hang.html"
     },
     {
@@ -1086,6 +1135,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/j/2/j2core.jpg",
         "price": null,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-j2-core-chinh-hang.html"
     },
     {
@@ -1095,6 +1145,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/s/a/samsung-galaxy-j6-plus-2018-didongviet_2.jpg",
         "price": null,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/samsung-galaxy-j6-prime-chinh-hang.html"
     },
     {
@@ -1120,6 +1171,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/x/a/xa2-blue.jpg",
         "price": 6590000,
         "ceilPrice": 7190000,
+        "hotDeal": true,
         "detailURL": "https://cellphones.com.vn/sony-xperia-xa2-chinh-hang.html"
     },
     {
@@ -1128,6 +1180,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/x/z/xzs-black_1.png",
         "price": 9090000,
         "ceilPrice": null,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/xperia-xzs-cty-at.html"
     },
     {
@@ -1136,6 +1189,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/x/a/xa2-ultra-gold.jpg",
         "price": 8990000,
         "ceilPrice": 9690000,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/sony-xperia-xa2-ultra-chinh-hang.html"
     },
     {
@@ -1144,6 +1198,8 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/f/9/f9-red_2.jpg",
         "price": 7690000,
         "ceilPrice": null,
+        "bestSell": true,
+        "hotDeal": true,
         "detailURL": "https://cellphones.com.vn/oppo-f9-chinh-hang.html"
     },
     {
@@ -1152,6 +1208,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/3/a3s-purple.jpg",
         "price": 3690000,
         "ceilPrice": null,
+        "bestPrice": true,
         "detailURL": "https://cellphones.com.vn/oppo-a3s-16-gb-chinh-hang.html"
     },
     {
@@ -1160,6 +1217,9 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/o/p/oppo-r17-pro.jpg1_-600x600.jpg",
         "price": 16990000,
         "ceilPrice": null,
+        "bestPrice": true,
+        "bestGift": true,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/oppo-r17-pro-chinh-hang.html"
     },
     {
@@ -1168,6 +1228,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/n/e/new_project_2_9.jpg",
         "price": 5990000,
         "ceilPrice": null,
+        "bestGift": true,
         "detailURL": "https://cellphones.com.vn/oppo-a7-64-gb-chinh-hang.html"
     },
     {
@@ -1176,6 +1237,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/3/a3s-red_2.jpg",
         "price": 4690000,
         "ceilPrice": null,
+        "bestGift": true,
         "detailURL": "https://cellphones.com.vn/oppo-a3s-32-gb-chinh-hang.html"
     },
     {
@@ -1208,6 +1270,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/f/7/f7-youth-black_2.jpg",
         "price": 4590000,
         "ceilPrice": null,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/oppo-f7-youth-chinh-hang-at.html"
     },
     {
@@ -1216,6 +1279,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/7/a71-2018-black_1.jpg",
         "price": 3690000,
         "ceilPrice": null,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/oppo-a71-2018-chinh-hang.html"
     },
     {
@@ -1224,6 +1288,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/a/7/a71-black.jpg",
         "price": 4690000,
         "ceilPrice": null,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/oppo-a71-chinh-hang.html"
     },
     {
@@ -1232,6 +1297,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/f/7/f7-youth-black.jpg",
         "price": 4990000,
         "ceilPrice": 5990000,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/oppo-f7-youth-chinh-hang.html"
     },
     {
@@ -1264,6 +1330,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/x/i/xiaomi-mi-8-lite-6-26-inch-4gb-64gb-smartphone-gray-736293-.jpg",
         "price": 5850000,
         "ceilPrice": 6690000,
+        "hotDeal": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-mi-8-lite-64-gb-chinh-hang.html"
     },
     {
@@ -1272,6 +1339,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/m/i/mi-max-3-black.jpg",
         "price": 6050000,
         "ceilPrice": 6499000,
+        "hotDeal": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-mi-max-3-64-gb-chinh-hang.html"
     },
     {
@@ -1280,6 +1348,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/n/o/note_6_pro_9_11.jpg",
         "price": 4550000,
         "ceilPrice": 4990000,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-redmi-note-6-pro-32gb-chinh-hang.html"
     },
     {
@@ -1288,6 +1357,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/r/e/redmi-note-5-pro-black_1.jpg",
         "price": 4190000,
         "ceilPrice": 4799000,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-redmi-note-5-pro-chinh-hang.html"
     },
     {
@@ -1296,6 +1366,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/m/i/mi-a2-blue_1.jpg",
         "price": 5190000,
         "ceilPrice": 5990000,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-mi-a2-32-gb-chinh-hang.html"
     },
     {
@@ -1304,6 +1375,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/m/i/mi-8-black_2_1_1.jpg",
         "price": 12290000,
         "ceilPrice": 14990000,
+        "bestGift": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-mi-8-pro-128-gb-chinh-hang.html"
     },
     {
@@ -1312,6 +1384,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/m/i/mi-8-black_1.jpg",
         "price": 10750000,
         "ceilPrice": 12990000,
+        "bestGift": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-mi-8-64-gb-chinh-hang.html"
     },
     {
@@ -1320,6 +1393,8 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/t/h/thumb-114131-default-big1.jpg",
         "price": 2760000,
         "ceilPrice": null,
+        "bestPrice": true,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-redmi-5-16-gb-chinh-hang.html"
     },
     {
@@ -1352,6 +1427,8 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/x/i/xiaomi-mi-8-lite-6-26-inch-4gb-64gb-smartphone-gray-736293-_2.jpg",
         "price": 6690000,
         "ceilPrice": 7490000,
+        "bestPrice": true,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-mi-8-lite-128-gb-chinh-hang.html"
     },
     {
@@ -1360,6 +1437,8 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/r/e/redmi-5-plus-blue.jpg",
         "price": 3750000,
         "ceilPrice": 3990000,
+        "bestGift": true,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-redmi-5-plus-32-gb-chinh-hang.html"
     },
     {
@@ -1368,6 +1447,8 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/r/e/redmi-note-5-black.jpg",
         "price": 4890000,
         "ceilPrice": 5690000,
+        "bestGift": true,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-redmi-note-5-64-gb-chinh-hang.html"
     },
     {
@@ -1384,6 +1465,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/r/e/redmi-4x-gold_2.png",
         "price": 2990000,
         "ceilPrice": 3690000,
+        "bestGift": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-redmi-4x-32-gb-chinh-hang.html"
     },
     {
@@ -1392,6 +1474,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/m/i/mi-8-se-black.jpg",
         "price": null,
         "ceilPrice": null,
+        "bestPrice": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-mi-8-se-4-gb-ram-chinh-hang.html"
     },
     {
@@ -1400,6 +1483,8 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/r/e/redmi-5-plus-black_2.jpg",
         "price": 4200000,
         "ceilPrice": 4790000,
+        "hotDeal": true,
+        "recentlyViewed": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-redmi-5-plus-64-gb-chinh-hang.html"
     },
     {
@@ -1408,6 +1493,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/m/i/mi-mix-2-white_1.jpg",
         "price": 15990000,
         "ceilPrice": null,
+        "recentlyViewed": true,
         "detailURL": "https://cellphones.com.vn/xiaomi-mi-mix-2-special-edition-chinh-hang.html"
     },
     {
@@ -1416,6 +1502,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/8/7/87921.jpg",
         "price": 21990000,
         "ceilPrice": null,
+        "recentlyViewed": true,
         "detailURL": "https://cellphones.com.vn/huawei-mate-20-pro-chinh-hang.html"
     },
     {
@@ -1448,6 +1535,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/y/7/y7-pro-2018-blue.jpg",
         "price": 3490000,
         "ceilPrice": null,
+        "bestGift": true,
         "detailURL": "https://cellphones.com.vn/huawei-y7-pro-chinh-hang.html"
     },
     {
@@ -1456,6 +1544,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/n/o/nova-3-red.jpg",
         "price": 9990000,
         "ceilPrice": null,
+        "bestGift": true,
         "detailURL": "https://cellphones.com.vn/huawei-nova-3-chinh-hang.html"
     },
     {
@@ -1472,6 +1561,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/n/o/nova-3i-white_2.jpg",
         "price": 5290000,
         "ceilPrice": null,
+        "bestGift": true,
         "detailURL": "https://cellphones.com.vn/huawei-nova-3i-chinh-hang-at.html"
     },
     {
@@ -1480,6 +1570,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/p/2/p20-pro.jpg",
         "price": 16990000,
         "ceilPrice": null,
+        "bestGift": true,
         "detailURL": "https://cellphones.com.vn/huawei-p20-pro-chinh-hang.html"
     },
     {
@@ -1488,6 +1579,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/n/e/new_project_thh.jpg",
         "price": null,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/huawei-mate-20x-chinh-hang.html"
     },
     {
@@ -1496,6 +1588,9 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/y/7/y7-prime-gold_5.jpg",
         "price": 4290000,
         "ceilPrice": null,
+        "bestGift": true,
+        "bestSell": true,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/huawei-y7-prime-chinh-hang.html"
     },
     {
@@ -1504,6 +1599,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/y/6/y6-prime-black_2.jpg",
         "price": 2290000,
         "ceilPrice": null,
+        "bestSell": true,
         "detailURL": "https://cellphones.com.vn/huawei-y6-prime-chinh-hang-at.html"
     },
     {
@@ -1512,6 +1608,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/n/o/nokia-6-plus-white_3.jpg",
         "price": 6590000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/nokia-6-1-plus-chinh-hang.html"
     },
     {
@@ -1600,6 +1697,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/1/0/105-2017-blue.jpg",
         "price": 359000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/nokia-105-2017-2-sim-chinh-hang.html"
     },
     {
@@ -1616,6 +1714,9 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/6/_/6_2018_500.jpg",
         "price": 6990000,
         "ceilPrice": null,
+        "bestPrice": true,
+        "bestSell": true,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/nokia-6-2018-64-gb-chinh-hang.html"
     },
     {
@@ -1624,6 +1725,9 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/1/5/1542200657_635_nokia_106_2018.jpg",
         "price": 389000,
         "ceilPrice": null,
+        "bestSell": true,
+        "hotNew": true,
+        "recentlyViewed": true,
         "detailURL": "https://cellphones.com.vn/nokia-106-2-sim-chinh-hang.html"
     },
     {
@@ -1632,6 +1736,8 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/n/e/new_project_2_6.jpg",
         "price": null,
         "ceilPrice": null,
+        "hotNew": true,
+        "recentlyViewed": true,
         "detailURL": "https://cellphones.com.vn/nokia-8-1-chinh-hang.html"
     },
     {
@@ -1648,6 +1754,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/5/-/5-black_3.jpg",
         "price": 2950000,
         "ceilPrice": null,
+        "recentlyViewed": true,
         "detailURL": "https://cellphones.com.vn/nokia-5-cty-at.html"
     },
     {
@@ -1682,6 +1789,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/n/e/new_project_1_2.jpg",
         "price": 6990000,
         "ceilPrice": null,
+        "bestPrice": true,
         "detailURL": "https://cellphones.com.vn/honor-play-chinh-hang.html"
     },
     {
@@ -1691,6 +1799,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/8/x/8x_4_1.png",
         "price": 6990000,
         "ceilPrice": null,
+        "bestPrice": true,
         "detailURL": "https://cellphones.com.vn/honor-8x-128-gb-chinh-hang.html"
     },
     {
@@ -1709,6 +1818,8 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/h/o/honor-7s-black.jpg",
         "price": 2590000,
         "ceilPrice": null,
+        "bestPrice": true,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/honor-7s-chinh-hang.html"
     },
     {
@@ -1745,6 +1856,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/v/5/v5s_700.jpg",
         "price": 5000000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/vivo-v5s-chinh-hang.html"
     },
     {
@@ -1754,6 +1866,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/2/0/20181012-bphone-3-vi-sao-chon-chu-vet-ruc-ro-sac-mau-lam-hinh-nen-1.jpg",
         "price": 6990000,
         "ceilPrice": null,
+        "hotNew": true,
         "detailURL": "https://cellphones.com.vn/bkav-bphone-3-chinh-hang.html"
     },
     {
@@ -1763,6 +1876,7 @@
         "thumbnail": "https://cellphones.com.vn/media/catalog/product/cache/7/small_image/220x175/9df78eab33525d08d6e5fb8d27136e95/b/p/bphone-3-pro-4.jpg",
         "price": 9990000,
         "ceilPrice": null,
+        "bestPrice": true,
         "detailURL": "https://cellphones.com.vn/bkav-bphone-3-pro-chinh-hang.html"
     }
 ]

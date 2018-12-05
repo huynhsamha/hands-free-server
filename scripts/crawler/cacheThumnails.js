@@ -16,24 +16,17 @@ async.eachSeries(products, (product, cb) => {
     const url = product.thumbnail;
     const uri = path.join(__dirname, 'images', filename);
 
-    updated.push({
-        ...product,
-        thumbnail: 'images/cache/' + filename,
-        realThumbnail: url
-    })
-    cb();
+    downloadImage(url, uri).then(() => {
 
-    // downloadImage(url, uri).then(() => {
+        console.log(uri);
+        updated.push({
+            ...product,
+            thumbnail: 'images/cache/' + filename,
+            realThumbnail: url
+        })
+        cb();
 
-    //     console.log(uri);
-    //     updated.push({
-    //         ...product,
-    //         thumbnail: 'images/cache/' + filename,
-    //         realThumbnail: url
-    //     })
-    //     cb();
-
-    // }).catch(err => cb(err))
+    }).catch(err => cb(err))
 
 }, (err) => {
     if (err) console.log(err);
@@ -41,5 +34,5 @@ async.eachSeries(products, (product, cb) => {
 
     fs.writeFileSync('./database/products.json', JSON.stringify(updated, null, 4));
 
-    // process.exit(0);
+    process.exit(0);
 })
