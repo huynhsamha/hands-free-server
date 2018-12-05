@@ -47,6 +47,11 @@ class OrderInfo extends BasicModel {
         }
         return $res;
     }
+
+    public function checkIsOwner($userId) {
+        $this->findByID();
+        if ($this->userId != $userId) throw new Error('Bạn không có quyền xem đơn hàng này.');
+    }
 }
 
 ?>

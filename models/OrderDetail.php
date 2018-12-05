@@ -35,6 +35,19 @@ class OrderDetail extends BasicModel {
     public function calculateTotalPrice() {
         $this->totalPrice = $this->unitPrice * $this->quantity;
     }
+
+    public function findAllInOrder() {
+        $rows = $this->conn->query("SELECT
+            p.id, p.name, p.thumbnail, p.price, o.quantity, o.totalPrice
+            FROM OrderDetail o, Product p 
+            where o.orderId = $this->orderId and o.productId = p.id");
+        
+        $res = array();
+        while ($row = mysqli_fetch_assoc($rows)) {
+            array_push($res, $row);
+        }
+        return $res;
+    }
 }
 
 ?>
