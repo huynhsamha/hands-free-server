@@ -25,8 +25,8 @@ try {
     $issued_at = time();
     $token_expire = $issued_at + App::$token_expire;
     $token = array(
-        'iss' => 'https://abc.com',
-        'aud' => 'https://abc.com',
+        'iss' => 'https://hands-free.com',
+        'aud' => 'https://hands-free.com',
         'iat' => $issued_at,
         'exp' => $token_expire,
         'data' => array(

@@ -43,7 +43,7 @@ abstract class BasicModel {
         $res = $this->conn->query("SELECT * FROM $this->table_name WHERE id = '$this->id'");
 
         if ($res->num_rows == 0) {
-            throw new Error('Item is not existen. Please check your id correctly');
+            throw new Error("Không tồn tại ID $this->id trong dữ liệu $this->table_name");
         }
 
         $data = $res->fetch_assoc();
@@ -61,6 +61,27 @@ abstract class BasicModel {
         if (sizeof($cols) == 0) throw new Error('Không có dữ liệu nào cần cập nhật');
 
         $res = $this->conn->query("UPDATE $this->table_name SET ". join(' , ', $cols) ." WHERE id = $this->id");
+
+        if (!$res) throw new Error($res->error);
+    }
+
+    public function updateSimpleNumberColumns($colsName) {
+        $cols = [];
+        foreach ($colsName as $name) {
+            if ($this->$name) {
+                array_push($cols, "$name = " . $this->$name);
+            }
+        }
+
+        if (sizeof($cols) == 0) throw new Error('Không có dữ liệu nào cần cập nhật');
+
+        $res = $this->conn->query("UPDATE $this->table_name SET ". join(' , ', $cols) ." WHERE id = $this->id");
+
+        if (!$res) throw new Error($res->error);
+    }
+
+    public function deleteByID() {
+        $res = $this->conn->query("DELETE from $this->table_name WHERE id = $this->id");
 
         if (!$res) throw new Error($res->error);
     }

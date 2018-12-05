@@ -219,6 +219,10 @@ class Product extends BasicModel {
             'data' => $res
         );
     }
+
+    public function updateQuantity() {
+        $this->updateSimpleNumberColumns(array('quantity'));
+    }
 }
 
 ?>

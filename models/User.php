@@ -16,7 +16,7 @@ class User extends BasicModel {
     public $address = '';
     public $password;
     public $salt;
-    public $created_at;
+    public $createdAt;
 
     public static function generateSalt() {
         # random_bytes => 32 bytes => 32*8 bits
