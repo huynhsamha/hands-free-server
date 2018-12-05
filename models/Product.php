@@ -34,7 +34,10 @@ class Product extends BasicModel {
             bestSell, bestGift, bestPrice, hotNew, hotDeal, recentlyViewed,
             quantity, status, warranty, 
             technicalInfo, galleryImages
-        ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+        ) VALUES (
+            ?,?,?,?,?,
+            ?,?,?,?,?,
+            ?,?,?,?,?,?)");
 
         $stmt->bind_param("issiiiiiiiiissss",
             $this->modelId,

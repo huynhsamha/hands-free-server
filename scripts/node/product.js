@@ -2,7 +2,8 @@ const axios = require('axios').default;
 const async = require('async');
 const qs = require('qs');
 
-let data = require('../db/shortProducts.json');
+// let data = require('../db/shortProducts.json');
+let data = require('../crawler/database/productsFix.json');
 const demo = require('../db/detailProducts.json')[1];
 
 // data = [data[1]] 
@@ -24,7 +25,7 @@ async.eachSeries(data, (dt, cb) => {
         hotNew: dt.hotNew,
         hotDeal: dt.hotDeal,
         recentlyViewed: dt.recentlyViewed,
-        quantity: Math.floor(Math.random() * 300),
+        quantity: Math.floor(Math.random() * 80),
         status: demo.status,
         warranty: demo.warranty,
         technicalInfo: JSON.stringify(demo.technicalInfo),
