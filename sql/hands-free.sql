@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 06, 2018 at 06:11 AM
+-- Generation Time: Dec 06, 2018 at 02:52 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -21,6 +21,30 @@ SET time_zone = "+00:00";
 --
 -- Database: `hands-free`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `Admin`
+--
+
+CREATE TABLE `Admin` (
+  `id` int(11) NOT NULL,
+  `username` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(64) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `salt` varchar(64) COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `Admin`
+--
+
+INSERT INTO `Admin` (`id`, `username`, `password`, `salt`) VALUES
+(1, 'admin', '44cfbdb35a28df0d24741d36a4266904b721875571788492321251571e1d0cea', '5db747ec8b47d6594bd08b2a044429d415b68b74cd6a22949430c62962c7e5e2'),
+(2, 'youtube', '6e759b959a7b9c6122abc276c6783aa65d65fa03feb0a7af7a4a7904bbb1f47d', '60db83341930211adb81432da8511d636af811b10df24653514ad50a44729aac'),
+(3, 'facebook', '8206784428caf4ec6cb9c0ba970ee92e2bcf97239cd4b372022581713469834d', 'c21229ed9e33293f9b78968e3a12ac1606e03559402c28eef2a5ff385b8f9eff'),
+(4, 'google', '79bb1e3ea4f38ce0fc66eaea7a743880218a7cfda87fdd955843819d82e0e156', 'ad97d0a3b134519849512d99aec999b6232a967cec767ba44d816bd42ff4446a'),
+(5, 'aws', '72148c25f72635e911d0ebaf90ea5a8a56b1accfaf838be9479cb2aba04211eb', 'a5a9ec7e49dbd7f6a8cb4a9752323eb5e15bb77baa22b613e57ee28f111167b9');
 
 -- --------------------------------------------------------
 
@@ -839,6 +863,12 @@ INSERT INTO `User` (`id`, `email`, `firstName`, `lastName`, `tel`, `photoUrl`, `
 --
 
 --
+-- Indexes for table `Admin`
+--
+ALTER TABLE `Admin`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `Brand`
 --
 ALTER TABLE `Brand`
@@ -882,6 +912,12 @@ ALTER TABLE `User`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `Admin`
+--
+ALTER TABLE `Admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `Brand`

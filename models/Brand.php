@@ -26,6 +26,14 @@ class Brand extends BasicModel {
         if (!$stmt->execute()) throw new Error($stmt->error);
     }
 
+    public function createLogical() {
+        $stmt = $this->conn->prepare("INSERT INTO $this->table_name (name) VALUES (?)");
+
+        $stmt->bind_param("s", $this->name);
+
+        if (!$stmt->execute()) throw new Error($stmt->error);
+    }
+
     public function findOneByName() {
         $res = $this->conn->query("SELECT * FROM $this->table_name WHERE name = '$this->name' limit 1");
 

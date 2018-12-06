@@ -63,6 +63,27 @@ class Product extends BasicModel {
         if (!$stmt->execute()) throw new Error($stmt->error);
     }
 
+    public function createLogical() {
+        $stmt = $this->conn->prepare("INSERT INTO $this->table_name (
+            modelId, name, price, ceilPrice, 
+            quantity, status, warranty
+        ) VALUES (
+            ?,?,?,?,?,
+            ?,?)");
+
+        $stmt->bind_param("isiiiss",
+            $this->modelId,
+            $this->name,
+            $this->price,
+            $this->ceilPrice,
+            $this->quantity,
+            $this->status,
+            $this->warranty
+        );
+
+        if (!$stmt->execute()) throw new Error($stmt->error);
+    }
+
     public function findByAttributeWithJoin($attr, $value) {
         $rows = $this->conn->query("SELECT p.*, m.name as modelName, b.name as brandName, b.id as brandId 
             FROM Product p, Model m, Brand b 
