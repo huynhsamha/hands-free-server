@@ -1,5 +1,13 @@
 <?php
 
+// phpinfo();
+
+if (!in_array('jpg', array('jpg', 'png', 'jpeg'))) {
+    echo 'no';
+} else {
+    echo 'yes';
+}
+
 // $var = '<script>&quotHello "World" why</script>';
 
 // echo strip_tags($var);
@@ -16,11 +24,11 @@
 // echo $a === null;
 // echo false === null;
 
-$keywords = "sony";
-$brandList = [103, 105];
-$minPrice = 3000000; 
-$maxPrice = 25000000;
-$orderType;
+// $keywords = "sony";
+// $brandList = [103, 105];
+// $minPrice = 3000000; 
+// $maxPrice = 25000000;
+// $orderType;
 
 // $sqlCount = "SELECT count(*) as total ";
 // $sqlRows  = "SELECT p.*, m.name as modelName, b.name as brandName, b.id as brandId ";
@@ -30,15 +38,15 @@ $orderType;
 
 // echo $sqlCount . $query;
 
-$onePage = 20;
-$page = 6;
-$total = 141;
-$minPage = 1;
-$maxPage = floor(($total + $onePage - 1) / $onePage);
-$page = min($page, $maxPage);
-$page = max($page, $minPage);
-$offset = $onePage * ($page - 1);
+// $onePage = 20;
+// $page = 6;
+// $total = 141;
+// $minPage = 1;
+// $maxPage = floor(($total + $onePage - 1) / $onePage);
+// $page = min($page, $maxPage);
+// $page = max($page, $minPage);
+// $offset = $onePage * ($page - 1);
 
-echo $maxPage, $page, $offset;
+// echo $maxPage, $page, $offset;
 
 ?>
