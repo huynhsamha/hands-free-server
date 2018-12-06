@@ -93,6 +93,10 @@ class User extends BasicModel {
         $this->updateSimpleStringColumns(array('firstName', 'lastName', 'tel', 'address'));
     }
 
+    public function updateAvatar() {
+        $this->updateSimpleStringColumns(array('photoUrl'));
+    }
+
     public function getProfile() {
         $this->findByID();
         $this->password = null;

@@ -31,6 +31,7 @@ $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
 try {
     $data = checkAuthorized();
+    $user->id = $data->userId;
 
     // Check if image file is a actual image or fake image
     $check = getimagesize($file["tmp_name"]);
@@ -53,10 +54,14 @@ try {
         throw new Error('Đã có lỗi xảy ra trong quá trình upload. Xin vui lòng thử lại.');
     }
 
+    // Update photoUrl
+    $user->photoUrl = 'uploads/' . $target_filename;
+    $user->updateAvatar();
+
     http_response_code(200);
     echo json_encode(array(
         'message' => 'Upload successfully',
-        'url' => 'uploads/' . $target_filename
+        'url' => $user->photoUrl
     ));
 
 } catch (Error $err) {
