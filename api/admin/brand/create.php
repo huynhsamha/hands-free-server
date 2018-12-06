@@ -39,6 +39,10 @@ try {
 } catch (Error $err) {
     http_response_code(400);
     echo json_encode($err->getMessage());
+
+} catch (Exception $err) {
+    http_response_code(400);
+    echo json_encode($err->getMessage());
 }
 
 ?>

@@ -133,10 +133,7 @@ class Product extends BasicModel {
     public function update() {
         $stmt = $this->conn->prepare("UPDATE $this->table_name SET
             modelId = ?, name = ?, thumbnail = ?,
-            price = ?, 
-            -- priceText = ?,
-            ceilPrice = ?, 
-            -- ceilPriceText = ?,
+            price = ?, ceilPrice = ?, 
             bestSell = ?, bestGift = ?, bestPrice = ?, hotNew = ?, hotDeal = ?, recentlyViewed = ?, 
             quantity = ?, status = ?, warranty = ?,
             technicalInfo = ?, galleryImages = ?
@@ -147,13 +144,13 @@ class Product extends BasicModel {
             $this->name,
             $this->thumbnail,
             $this->price,
-            // $this->priceText,
             $this->ceilPrice,
-            // $this->ceilPriceText,
             $this->bestSell,
             $this->bestGift,
             $this->bestPrice,
             $this->hotNew,
+            $this->hotDeal,
+            $this->recentlyViewed,
             $this->quantity,
             $this->status,
             $this->warranty,

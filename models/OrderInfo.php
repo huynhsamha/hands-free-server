@@ -52,6 +52,16 @@ class OrderInfo extends BasicModel {
         $this->findByID();
         if ($this->userId != $userId) throw new Error('Bạn không có quyền xem đơn hàng này.');
     }
+
+    public function approveStatus() {
+        $this->status = "Approved";
+        $this->updateSimpleStringColumns(array('status'));
+    }
+
+    public function completeStatus() {
+        $this->status = "Completed";
+        $this->updateSimpleStringColumns(array('status'));
+    }
 }
 
 ?>

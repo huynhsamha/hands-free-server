@@ -30,7 +30,7 @@ class Model extends BasicModel {
         $stmt = $this->conn->prepare("INSERT INTO $this->table_name (
             brandId, name) VALUES (?, ?)");
 
-        $stmt->bind_param("isi",
+        $stmt->bind_param("is",
             $this->brandId,
             $this->name
         );

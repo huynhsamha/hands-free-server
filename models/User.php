@@ -116,6 +116,53 @@ class User extends BasicModel {
 
         $this->updateSimpleStringColumns(array('password', 'salt'));
     }
+
+    public function search($keywords=null, $page=null) {
+
+        /** Default value for params */
+        $keywords = Utils::defaultNull($keywords, '');
+        $page = Utils::defaultNull($page, 1);
+
+        /** Count total products matching */
+        $sqlCount = "SELECT count(*) as total from User ";
+
+        $attrList = array('id', 'email', 'firstName', 'lastName', 'tel', 'address');
+        $queryList = array();
+        foreach ($attrList as $attr) array_push($queryList, " $attr like '%$keywords%' ");
+        $query = " where " . join(" or ", $queryList);
+        
+        $sqlCount = $sqlCount . $query;
+        $total = $this->conn->query($sqlCount);
+        if (!$total) throw new Error('Error SQL query statement.');
+        $total = $total->fetch_assoc()['total'];
+
+        /** Paging */
+        $onePage = 20;
+        $minPage = 1;
+        $maxPage = floor(($total + $onePage - 1) / $onePage);
+        $page = min($page, $maxPage);
+        $page = max($page, $minPage);
+        $offset = $onePage * ($page - 1);
+        
+        /** Retrieve */
+        $sqlRows = "SELECT * FROM ProtectUser ";
+        $sqlRows = $sqlRows . $query . " limit $onePage offset $offset ";
+        
+        $rows = $this->conn->query($sqlRows);
+        $res = array();
+        while ($row = mysqli_fetch_assoc($rows)) {
+            array_push($res, $row);
+        }
+
+        return array(
+            'total' => $total,
+            'page' => $page,
+            'onePage' => $onePage,
+            'totalPage' => $maxPage,
+            'offset' => $offset,
+            'data' => $res
+        );
+    }
 }
 
 ?>

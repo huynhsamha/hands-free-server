@@ -7,7 +7,7 @@ include_once __DIR__ . DIRECTORY_SEPARATOR . '../../../models/Product.php';
 include_once __DIR__.DIRECTORY_SEPARATOR.'../middleware.php';
 
 /**
- * Thêm một model của 1 brand
+ * Cap nhat 1 product
  * 
  * POST
  *  Headers:
