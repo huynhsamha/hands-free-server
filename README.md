@@ -1,6 +1,8 @@
 # Hands-free Server
 Assignment web (HCMUT) - PHP Server for Hands-free App
 
+Website: http://hands-free.epizy.com
+
 Client Repository: https://github.com/huynhsamha/hands-free-client
 
 ## Database
