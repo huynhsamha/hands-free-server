@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 06, 2018 at 04:03 PM
+-- Generation Time: Dec 08, 2018 at 03:56 AM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -434,23 +434,6 @@ INSERT INTO `Product` (`id`, `modelId`, `name`, `thumbnail`, `price`, `ceilPrice
 -- --------------------------------------------------------
 
 --
--- Stand-in structure for view `ProtectUser`
--- (See below for the actual view)
---
-CREATE TABLE `ProtectUser` (
-`id` int(11)
-,`email` varchar(256)
-,`firstName` varchar(64)
-,`lastName` varchar(64)
-,`tel` varchar(64)
-,`photoUrl` varchar(1024)
-,`address` varchar(1024)
-,`createdAt` timestamp
-);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `User`
 --
 
@@ -874,15 +857,6 @@ INSERT INTO `User` (`id`, `email`, `firstName`, `lastName`, `tel`, `photoUrl`, `
 (5398, 'morris58@hotmail.com', 'Morris', 'Bradtke', '515-432-8575', 'https://s3.amazonaws.com/uifaces/faces/twitter/edkf/128.jpg', '694 Shirley Fall, East Jimborough, Ecuador', '19043fb5741332c6f357e4be3a6323b01b8a16d82b0fcf009957dbcb77ce5174', '10f454050323f6f942bee08903647fcfbc5b493304bc8178bf3e87bf2e408b3b', '2018-12-05 12:17:24'),
 (5399, 'gladyslockman70@yahoo.com', 'Gladys', 'Lockman', '(327) 703-2611', 'https://s3.amazonaws.com/uifaces/faces/twitter/rangafangs/128.jpg', '117 Margie Manor, Lindamouth, Sierra Leone', 'b36b0ee3a49f1b72dcd28abb186b26422cfbb9576c87ce9f0c111e68f3164d7e', 'b37a18a87a876367ee03a2b6565d6bdc8ee44148d445f100f4d2bd2da8fc4dec', '2018-12-05 12:17:24'),
 (5400, 'lela.osinski@hotmail.com', 'Lela', 'Osinski', '(092) 056-1235 x458', 'https://s3.amazonaws.com/uifaces/faces/twitter/matbeedotcom/128.jpg', '1438 Altenwerth Pine Suite 219, Kariburgh, St. Pierre & Miquelon', '0b264acb94848840a8a83786f659c7693f39fdce5b339bace85eba4331b39d53', 'e79b1c07fcb8464e0a9fa6fe7dd4084426d5c2ab462c6930d5b79239b7afbc01', '2018-12-05 12:17:24');
-
--- --------------------------------------------------------
-
---
--- Structure for view `ProtectUser`
---
-DROP TABLE IF EXISTS `ProtectUser`;
-
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `ProtectUser`  AS  select `User`.`id` AS `id`,`User`.`email` AS `email`,`User`.`firstName` AS `firstName`,`User`.`lastName` AS `lastName`,`User`.`tel` AS `tel`,`User`.`photoUrl` AS `photoUrl`,`User`.`address` AS `address`,`User`.`createdAt` AS `createdAt` from `User` ;
 
 --
 -- Indexes for dumped tables

@@ -72,8 +72,8 @@ class Admin extends BasicModel {
             throw new Error('Mật khẩu chưa đúng. Vui lòng kiểm tra lại mật khẩu.');
         }
 
-        $this->password = null;
-        $this->salt = null;
+        unset($this->password);
+        unset($this->salt);
     }
 }
 

@@ -85,8 +85,8 @@ class User extends BasicModel {
             throw new Error('Mật khẩu chưa đúng. Vui lòng kiểm tra lại mật khẩu.');
         }
 
-        $this->password = null;
-        $this->salt = null;
+        unset($this->password);
+        unset($this->salt);
     }
 
     public function updateInfo() {
@@ -99,8 +99,9 @@ class User extends BasicModel {
 
     public function getProfile() {
         $this->findByID();
-        $this->password = null;
-        $this->salt = null;
+        
+        unset($this->password);
+        unset($this->salt);
     }
 
     public function changePassword($oldPassword, $newPassword) {
@@ -145,12 +146,14 @@ class User extends BasicModel {
         $offset = $onePage * ($page - 1);
         
         /** Retrieve */
-        $sqlRows = "SELECT * FROM ProtectUser ";
+        $sqlRows = "SELECT * FROM User";
         $sqlRows = $sqlRows . $query . " limit $onePage offset $offset ";
         
         $rows = $this->conn->query($sqlRows);
         $res = array();
         while ($row = mysqli_fetch_assoc($rows)) {
+            unset($row['password']);
+            unset($row['salt']);
             array_push($res, $row);
         }
 
