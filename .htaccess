@@ -1,0 +1,3 @@
+Options -indexes
+
+DirectoryIndex index.php index.html /handsfree/404.php
